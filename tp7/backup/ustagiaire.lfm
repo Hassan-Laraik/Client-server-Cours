@@ -1,0 +1,343 @@
+object Form1: TForm1
+  Left = 880
+  Height = 444
+  Top = 250
+  Width = 667
+  Caption = 'Form1'
+  ClientHeight = 444
+  ClientWidth = 667
+  DesignTimePPI = 81
+  object Panel1: TPanel
+    Left = 0
+    Height = 42
+    Top = 0
+    Width = 667
+    Align = alTop
+    Caption = 'Fiche De Stagiaire'
+    Color = clNavy
+    Font.Color = clWhite
+    Font.Height = -14
+    Font.Name = 'Sans'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object DBEdit1: TDBEdit
+    Left = 195
+    Height = 33
+    Top = 55
+    Width = 203
+    DataField = 'code'
+    DataSource = DataSource1
+    Alignment = taRightJustify
+    MaxLength = 0
+    TabOrder = 1
+  end
+  object DBEdit2: TDBEdit
+    Left = 195
+    Height = 33
+    Top = 100
+    Width = 203
+    DataField = 'noms'
+    DataSource = DataSource1
+    MaxLength = 30
+    TabOrder = 2
+  end
+  object DBEdit3: TDBEdit
+    Left = 195
+    Height = 33
+    Top = 150
+    Width = 203
+    DataField = 'prenoms'
+    DataSource = DataSource1
+    MaxLength = 30
+    TabOrder = 3
+  end
+  object DBDateEdit1: TDBDateEdit
+    Left = 195
+    Height = 33
+    Top = 213
+    Width = 192
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DateOrder = doNone
+    ButtonWidth = 19
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 4
+    Text = '02/12/2023'
+    DataField = 'naissance'
+    DataSource = DataSource1
+  end
+  object DBComboBox1: TDBComboBox
+    Left = 200
+    Height = 33
+    Top = 272
+    Width = 185
+    DataField = 'sexe'
+    DataSource = DataSource1
+    ItemHeight = 0
+    Items.Strings = (
+      'M'
+      'F'
+    )
+    MaxLength = 0
+    TabOrder = 5
+  end
+  object DBEdit4: TDBEdit
+    Left = 200
+    Height = 33
+    Top = 325
+    Width = 203
+    DataField = 'phone'
+    DataSource = DataSource1
+    MaxLength = 10
+    TabOrder = 6
+  end
+  object DBMemo1: TDBMemo
+    Left = 440
+    Height = 125
+    Top = 220
+    Width = 191
+    DataField = 'adresse'
+    DataSource = DataSource1
+    TabOrder = 7
+  end
+  object Label1: TLabel
+    Left = 48
+    Height = 16
+    Top = 54
+    Width = 30
+    Caption = 'code'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 50
+    Height = 16
+    Top = 105
+    Width = 28
+    Caption = 'nom'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 55
+    Height = 16
+    Top = 160
+    Width = 49
+    Caption = 'prenom'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 50
+    Height = 16
+    Top = 213
+    Width = 63
+    Caption = 'naissance '
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 50
+    Height = 16
+    Top = 275
+    Width = 45
+    Caption = 'gendre'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 55
+    Height = 16
+    Top = 325
+    Width = 26
+    Caption = 'gsm'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 450
+    Height = 16
+    Top = 195
+    Width = 48
+    Caption = 'adresse'
+    ParentColor = False
+  end
+  object DBImage1: TDBImage
+    Left = 455
+    Height = 133
+    Top = 47
+    Width = 180
+    DataField = 'photo'
+    DataSource = DataSource1
+    OnDblClick = DBImage1DblClick
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 440
+    Height = 21
+    Top = 360
+    Width = 203
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 21
+    ClientWidth = 203
+    DataSource = DataSource1
+    Options = []
+    TabOrder = 8
+    VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast]
+  end
+  object BtnNouveau: TButton
+    Left = 25
+    Height = 32
+    Top = 403
+    Width = 65
+    Caption = 'BtnNouveau'
+    OnClick = BtnNouveauClick
+    TabOrder = 9
+  end
+  object BtnModifier: TButton
+    Left = 102
+    Height = 32
+    Top = 403
+    Width = 65
+    Caption = 'BtnModifier'
+    OnClick = BtnModifierClick
+    TabOrder = 10
+  end
+  object BtnSupprimer: TButton
+    Left = 189
+    Height = 32
+    Top = 403
+    Width = 65
+    Caption = 'BtnSupprimer'
+    OnClick = BtnSupprimerClick
+    TabOrder = 11
+  end
+  object BtnAnnuller: TButton
+    Left = 281
+    Height = 32
+    Top = 403
+    Width = 65
+    Caption = 'BtnAnnuller'
+    OnClick = BtnAnnullerClick
+    TabOrder = 12
+  end
+  object BtnValider: TButton
+    Left = 378
+    Height = 32
+    Top = 395
+    Width = 65
+    Caption = 'BtnValider'
+    OnClick = BtnValiderClick
+    TabOrder = 13
+  end
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 0
+    Database = 'tsge'
+    User = 'root'
+    Password = '12345678'
+    Protocol = 'mysql-5'
+    Left = 625
+    Top = 400
+  end
+  object DataSource1: TDataSource
+    DataSet = ZTable1
+    Left = 490
+    Top = 406
+  end
+  object ZTable1: TZTable
+    Connection = ZConnection1
+    OnPostError = ZTable1PostError
+    Active = True
+    TableName = 'stagiaires'
+    Left = 551
+    Top = 398
+    object ZTable1code: TLongintField
+      FieldKind = fkData
+      FieldName = 'code'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZTable1noms: TStringField
+      FieldKind = fkData
+      FieldName = 'noms'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 30
+    end
+    object ZTable1prenoms: TStringField
+      FieldKind = fkData
+      FieldName = 'prenoms'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 30
+    end
+    object ZTable1phone: TStringField
+      FieldKind = fkData
+      FieldName = 'phone'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 10
+    end
+    object ZTable1naissance: TDateField
+      FieldKind = fkData
+      FieldName = 'naissance'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZTable1adresse: TMemoField
+      FieldKind = fkData
+      FieldName = 'adresse'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object ZTable1sexe: TStringField
+      FieldKind = fkData
+      FieldName = 'sexe'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 1
+    end
+    object ZTable1photo: TBlobField
+      FieldKind = fkData
+      FieldName = 'photo'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+end

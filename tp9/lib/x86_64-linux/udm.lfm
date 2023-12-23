@@ -1,0 +1,108 @@
+object DM: TDM
+  OldCreateOrder = False
+  Height = 381
+  HorizontalOffset = 880
+  VerticalOffset = 250
+  Width = 677
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 0
+    Database = 'salle_sport2'
+    User = 'root'
+    Password = '12345678'
+    Protocol = 'mysql-5'
+    Left = 44
+    Top = 32
+  end
+  object ZtblClients: TZTable
+    Connection = ZConnection1
+    Active = True
+    TableName = 'adherents'
+    Left = 45
+    Top = 125
+    object ZtblClientsidadherent: TLongintField
+      FieldKind = fkData
+      FieldName = 'idadherent'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZtblClientsnom: TStringField
+      FieldKind = fkData
+      FieldName = 'nom'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 45
+    end
+    object ZtblClientsprenom: TStringField
+      FieldKind = fkData
+      FieldName = 'prenom'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 45
+    end
+    object ZtblClientsadress: TStringField
+      FieldKind = fkData
+      FieldName = 'adress'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 45
+    end
+    object ZtblClientstele: TStringField
+      FieldKind = fkData
+      FieldName = 'tele'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 45
+    end
+    object ZtblClientssexe: TStringField
+      FieldKind = fkData
+      FieldName = 'sexe'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 45
+    end
+    object ZtblClientsnaissance: TDateField
+      FieldKind = fkData
+      FieldName = 'naissance'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZtblClientsphoto: TBlobField
+      FieldKind = fkData
+      FieldName = 'photo'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+end

@@ -1,0 +1,35 @@
+object FrmExercice1: TFrmExercice1
+  Left = 340
+  Height = 294
+  Top = 180
+  Width = 472
+  Caption = 'Exercice1'
+  ClientHeight = 294
+  ClientWidth = 472
+  DesignTimePPI = 81
+  LCLVersion = '2.2.4.0'
+  object EdtNom: TEdit
+    Left = 88
+    Height = 33
+    Top = 64
+    Width = 312
+    TabOrder = 0
+  end
+  object BtnAfficher: TButton
+    Left = 120
+    Height = 48
+    Top = 128
+    Width = 216
+    Caption = 'Afficher'
+    OnClick = BtnAfficherClick
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 88
+    Height = 16
+    Top = 32
+    Width = 135
+    Caption = 'Donnez Votre Nom !: '
+    ParentColor = False
+  end
+end

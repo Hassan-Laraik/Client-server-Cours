@@ -1,0 +1,129 @@
+object Form1: TForm1
+  Left = 585
+  Height = 539
+  Top = 115
+  Width = 427
+  Caption = 'Form1'
+  ClientHeight = 539
+  ClientWidth = 427
+  DesignTimePPI = 81
+  LCLVersion = '2.2.4.0'
+  object BtnValider: TButton
+    Left = 152
+    Height = 40
+    Top = 440
+    Width = 90
+    Caption = 'Valider'
+    OnClick = BtnValiderClick
+    TabOrder = 0
+  end
+  object ffacerBtnE: TButton
+    Left = 296
+    Height = 32
+    Top = 440
+    Width = 87
+    Caption = 'Effacer'
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 57
+    Height = 16
+    Top = 52
+    Width = 30
+    Caption = 'Nom'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 63
+    Height = 16
+    Top = 92
+    Width = 49
+    Caption = 'Prenom'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 62
+    Height = 16
+    Top = 137
+    Width = 43
+    Caption = 'LaVille'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 60
+    Height = 16
+    Top = 184
+    Width = 29
+    Caption = 'DSM'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 62
+    Height = 16
+    Top = 232
+    Width = 40
+    Caption = 'Credit'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 57
+    Height = 16
+    Top = 328
+    Width = 50
+    Caption = 'Adresse'
+    ParentColor = False
+  end
+  object EdtNom: TEdit
+    Left = 160
+    Height = 33
+    Top = 48
+    Width = 224
+    TabOrder = 2
+  end
+  object EdtPrenom: TEdit
+    Left = 160
+    Height = 33
+    Top = 92
+    Width = 224
+    TabOrder = 3
+  end
+  object EdtVille: TEdit
+    Left = 168
+    Height = 33
+    Top = 137
+    Width = 216
+    TabOrder = 4
+  end
+  object EdtGSM: TEdit
+    Left = 168
+    Height = 33
+    Top = 184
+    Width = 216
+    TabOrder = 5
+  end
+  object EdtCredit: TEdit
+    Left = 168
+    Height = 33
+    Top = 232
+    Width = 216
+    TabOrder = 6
+  end
+  object MemoAdresse: TMemo
+    Left = 168
+    Height = 76
+    Top = 328
+    Width = 216
+    Lines.Strings = (
+      ''
+    )
+    TabOrder = 7
+  end
+  object PnlTitre: TPanel
+    Left = 8
+    Height = 42
+    Top = 0
+    Width = 416
+    Caption = 'Formulaire Client'
+    TabOrder = 8
+  end
+end

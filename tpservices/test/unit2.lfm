@@ -1,0 +1,39 @@
+object Form2: TForm2
+  Left = 960
+  Height = 411
+  Top = 250
+  Width = 568
+  Caption = 'Form2'
+  ClientHeight = 411
+  ClientWidth = 568
+  DesignTimePPI = 81
+  object Button1: TButton
+    Left = 408
+    Height = 21
+    Top = 285
+    Width = 63
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 40
+    Height = 33
+    Top = 90
+    Width = 243
+    TabOrder = 1
+    Text = 'Edit1'
+  end
+  object Edit2: TEdit
+    Left = 40
+    Height = 33
+    Top = 155
+    Width = 243
+    TabOrder = 2
+    Text = 'Edit2'
+  end
+  object DataSource1: TDataSource
+    Left = 274
+    Top = 300
+  end
+end

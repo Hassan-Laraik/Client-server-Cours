@@ -1,0 +1,33 @@
+Duplicate entry '1111111111' for key 'stagiaires.phone'
+Duplicate entry '2' for key 'stagiaires.PRIMARY'
+Column 'noms' cannot be null
+
+
+Duplicate_Entry := (pos('Duplicate entry',e.Message)<> 0);
+Cannot_Be_Null  := (pos('cannot be null',e.Message)<> 0);
+
+
+if (
+  pos( 'Duplicate entry '+quotedstr(dataset.FieldByName('phone').AsString)+' for key '+QuotedStr('stagiaires.phone') ,e.Message)<> 0) 
+  
+  then
+     ShowMessage(e.Message); 
+     
+     if (
+  pos( 'Duplicate entry '+quotedstr(dataset.FieldByName('code').AsString)+' for key '+QuotedStr('stagiaires.PRIMARY') ,e.Message)<> 0) 
+  
+  
+  
+  Column 'noms' cannot be null
+  
+  if (
+  pos('Column '+quotedstr(dataset.FieldByName('noms').AsString)+' cannot be null') ,e.Message)<> 0)
+  
+  if (
+  pos('Column '+quotedstr(dataset.FieldByName('prenoms').AsString)+' cannot be null') ,e.Message)<> 0) 
+ 
+ if (
+  pos(Format('Duplicate entry %s for key %s', [quotedstr(dataset.FieldByName('noms').AsString)],['stagiaires.phone'])
+  )
+  
+  

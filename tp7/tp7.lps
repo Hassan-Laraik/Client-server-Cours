@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="tp7.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="25"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ustagiaire.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="83"/>
+        <CursorPos X="22" Y="99"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/packages/fcl-db/src/base/db.pas"/>
+        <UnitName Value="DB"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="68"/>
+        <CursorPos X="28" Y="81"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="/usr/share/fpcsrc/3.2.2/rtl/objpas/sysutils/sysutilh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="231"/>
+        <CursorPos X="36" Y="259"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="../../../../.lazarus/onlinepackagemanager/packages/zeosdbo/src/dbc/ZDbcMySqlUtils.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="298"/>
+        <CursorPos Y="308"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="69" Column="17" TopLine="51"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="87" Column="24" TopLine="63"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="78" Column="15" TopLine="65"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="87" Column="70" TopLine="65"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="86" Column="23" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="84" Column="3" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="83" Column="13" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="84" Column="20" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="81" Column="59" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="81" Column="59" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="84" Column="126" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="85" Column="118" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="84" Column="7" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="85" Column="122" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="84" Column="122" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="85" Column="6" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="87" Column="123" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="84" Column="139" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="80" Column="64" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="85" Column="33" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="87" Column="93" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="85" Column="99" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="89" Column="12" TopLine="79"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="85" Column="44" TopLine="79"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="88" Column="62" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="109" Column="24" TopLine="92"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="105" Column="75" TopLine="94"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="119" Column="75" TopLine="108"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="92" Column="13" TopLine="89"/>
+      </Position>
+      <Position>
+        <Filename Value="ustagiaire.pas"/>
+        <Caret Line="98" Column="22" TopLine="82"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
