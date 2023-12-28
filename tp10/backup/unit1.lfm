@@ -1,0 +1,119 @@
+object Form1: TForm1
+  Left = 880
+  Height = 482
+  Top = 250
+  Width = 750
+  Caption = 'Form1'
+  ClientHeight = 482
+  ClientWidth = 750
+  DesignTimePPI = 81
+  WindowState = wsMaximized
+  object Panel1: TPanel
+    Left = 0
+    Height = 42
+    Top = 0
+    Width = 750
+    Align = alTop
+    Caption = 'Panel1'
+    TabOrder = 0
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 42
+    Top = 440
+    Width = 750
+    Align = alBottom
+    Caption = 'Panel2'
+    TabOrder = 1
+  end
+  object Panel3: TPanel
+    Left = 0
+    Height = 42
+    Top = 42
+    Width = 750
+    Align = alTop
+    Caption = 'Panel3'
+    ClientHeight = 42
+    ClientWidth = 750
+    TabOrder = 2
+    object EdtRechercher: TEdit
+      Left = 1
+      Height = 40
+      Top = 1
+      Width = 620
+      Align = alClient
+      Alignment = taCenter
+      TabOrder = 0
+    end
+    object BrtRechercher: TButton
+      Left = 621
+      Height = 40
+      Top = 1
+      Width = 128
+      Align = alRight
+      Caption = 'Rechercher'
+      OnClick = BrtRechercherClick
+      TabOrder = 1
+    end
+  end
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 310
+    Top = 84
+    Width = 750
+    Align = alClient
+    AutoFillColumns = True
+    Color = clWindow
+    Columns = <>
+    DataSource = DsStagiaires
+    TabOrder = 3
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 0
+    Height = 46
+    Top = 394
+    Width = 750
+    Align = alBottom
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 46
+    ClientWidth = 750
+    DataSource = DsStagiaires
+    Options = []
+    TabOrder = 4
+  end
+  object ZtblStagiaires: TZTable
+    Connection = Znx
+    Active = True
+    TableName = 'stagiaires'
+    Left = 190
+    Top = 225
+  end
+  object Znx: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 0
+    Database = 'tsge'
+    User = 'root'
+    Password = '12345678'
+    Protocol = 'mysql-5'
+    Left = 75
+    Top = 220
+  end
+  object DsStagiaires: TDataSource
+    DataSet = ZtblStagiaires
+    Left = 340
+    Top = 225
+  end
+end
