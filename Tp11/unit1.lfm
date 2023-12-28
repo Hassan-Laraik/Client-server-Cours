@@ -1,0 +1,273 @@
+object Form1: TForm1
+  Left = 880
+  Height = 470
+  Top = 250
+  Width = 755
+  Caption = 'Form1'
+  ClientHeight = 470
+  ClientWidth = 755
+  DesignTimePPI = 81
+  object DBEdit1: TDBEdit
+    Left = 80
+    Height = 33
+    Top = 10
+    Width = 238
+    DataField = 'code'
+    DataSource = DsStagiaires
+    Alignment = taRightJustify
+    MaxLength = 0
+    TabOrder = 0
+  end
+  object DBEdit2: TDBEdit
+    Left = 83
+    Height = 33
+    Top = 55
+    Width = 238
+    DataField = 'noms'
+    DataSource = DsStagiaires
+    MaxLength = 30
+    TabOrder = 1
+  end
+  object DBEdit3: TDBEdit
+    Left = 85
+    Height = 33
+    Top = 95
+    Width = 238
+    DataField = 'prenoms'
+    DataSource = DsStagiaires
+    MaxLength = 30
+    TabOrder = 2
+  end
+  object DBEdit4: TDBEdit
+    Left = 83
+    Height = 33
+    Top = 140
+    Width = 238
+    DataField = 'phone'
+    DataSource = DsStagiaires
+    MaxLength = 10
+    TabOrder = 3
+  end
+  object DBDateEdit1: TDBDateEdit
+    Left = 145
+    Height = 33
+    Top = 200
+    Width = 237
+    CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+    DateOrder = doNone
+    ButtonWidth = 19
+    NumGlyphs = 1
+    MaxLength = 0
+    TabOrder = 4
+    Text = '02/12/2023'
+    DataField = 'naissance'
+    DataSource = DsStagiaires
+  end
+  object DBMemo1: TDBMemo
+    Left = 89
+    Height = 76
+    Top = 306
+    Width = 261
+    DataField = 'adresse'
+    DataSource = DsStagiaires
+    TabOrder = 5
+  end
+  object DBComboBox1: TDBComboBox
+    Left = 90
+    Height = 33
+    Top = 250
+    Width = 84
+    DataField = 'sexe'
+    DataSource = DsStagiaires
+    ItemHeight = 0
+    MaxLength = 0
+    TabOrder = 6
+  end
+  object Label1: TLabel
+    Left = 34
+    Height = 16
+    Top = 17
+    Width = 32
+    Caption = 'Code'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 30
+    Height = 16
+    Top = 60
+    Width = 30
+    Caption = 'Nom'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 20
+    Height = 16
+    Top = 105
+    Width = 49
+    Caption = 'Prenom'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 25
+    Height = 16
+    Top = 160
+    Width = 28
+    Caption = 'GSM'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 21
+    Height = 16
+    Top = 210
+    Width = 116
+    Caption = 'Date De Naissance'
+    ParentColor = False
+  end
+  object Label6: TLabel
+    Left = 30
+    Height = 16
+    Top = 255
+    Width = 30
+    Caption = 'Sexe'
+    ParentColor = False
+  end
+  object Label7: TLabel
+    Left = 20
+    Height = 16
+    Top = 310
+    Width = 50
+    Caption = 'Adresse'
+    ParentColor = False
+  end
+  object Panel1: TPanel
+    Left = 500
+    Height = 124
+    Top = 11
+    Width = 143
+    Caption = 'Panel1'
+    ClientHeight = 124
+    ClientWidth = 143
+    Color = 1099984
+    ParentColor = False
+    TabOrder = 7
+    object DBImage1: TDBImage
+      Left = 4
+      Height = 116
+      Top = 4
+      Width = 135
+      Align = alClient
+      BorderSpacing.Left = 3
+      BorderSpacing.Top = 3
+      BorderSpacing.Right = 3
+      BorderSpacing.Bottom = 3
+      DataField = 'photo'
+      DataSource = DsStagiaires
+      Stretch = True
+    end
+  end
+  object BtnNouveau: TButton
+    Left = 44
+    Height = 41
+    Top = 408
+    Width = 63
+    Caption = 'Nouveau'
+    OnClick = BtnNouveauClick
+    TabOrder = 8
+  end
+  object BtnModifier: TButton
+    Left = 145
+    Height = 41
+    Top = 405
+    Width = 63
+    Caption = 'Modifier'
+    OnClick = BtnModifierClick
+    TabOrder = 9
+  end
+  object BtnSupprimer: TButton
+    Left = 240
+    Height = 41
+    Top = 405
+    Width = 63
+    Caption = 'Supprimer'
+    OnClick = BtnSupprimerClick
+    TabOrder = 10
+  end
+  object btnAnnuler: TButton
+    Left = 355
+    Height = 41
+    Top = 405
+    Width = 63
+    Caption = 'Annuler'
+    OnClick = btnAnnulerClick
+    TabOrder = 11
+  end
+  object BtnValider: TButton
+    Left = 530
+    Height = 41
+    Top = 405
+    Width = 63
+    Caption = 'Valider'
+    OnClick = BtnValiderClick
+    TabOrder = 12
+  end
+  object BtnChargerPhoto: TButton
+    Left = 510
+    Height = 31
+    Top = 150
+    Width = 130
+    Caption = 'Charger Photo'
+    OnClick = BtnChargerPhotoClick
+    TabOrder = 13
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 445
+    Height = 41
+    Top = 190
+    Width = 273
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 41
+    ClientWidth = 273
+    DataSource = DsStagiaires
+    Options = []
+    TabOrder = 14
+  end
+  object Znx: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=True'
+      'controls_cp=CP_UTF8'
+    )
+    Connected = True
+    HostName = 'localhost'
+    Port = 0
+    Database = 'tsge'
+    User = 'root'
+    Password = '12345678'
+    Protocol = 'mysql-5'
+    Left = 625
+    Top = 225
+  end
+  object ZtblStagiaires: TZTable
+    Connection = Znx
+    Active = True
+    TableName = 'stagiaires'
+    Left = 585
+    Top = 310
+  end
+  object DsStagiaires: TDataSource
+    DataSet = ZtblStagiaires
+    Left = 490
+    Top = 245
+  end
+  object OpenPictureDialog1: TOpenPictureDialog
+    Left = 413
+    Top = 88
+  end
+end
